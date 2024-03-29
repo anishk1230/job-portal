@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal Admin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color:#e7e3da;
+      color: chocolate;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #e7e3da;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: chocolate;
+      text-decoration: none;
+    }
+    .container {
+      margin: 20px;
+    }
+    .content {
+      border: 1px solid chocolate;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showUsers()">Manage Users</a></li>
+      <li><a href="#" onclick="showJobs()">Manage Jobs</a></li>
+      <li><a href="#" onclick="showApplications()">Manage Applications</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div id="users" class="content" style="display:none;">
+      <h2>Manage Users
+        <br> 48 New Users joined the platform today!
+      </h2>
+    </div>
+
+    <div id="jobs" class="content" style="display:none;">
+      <h2>Manage Jobs<br>12 New Vacancies have opened up in the past 2 days!</h2>
+    </div>
+
+    <div id="applications" class="content" style="display:none;">
+      <h2>Manage Applications
+        <br>17 Clients applied for Jobs in the past hour!
+      </h2>
+    </div>
+
+  </div>
+
+  <script>
+    function showUsers() {
+      document.getElementById('users').style.display = 'block';
+      document.getElementById('jobs').style.display = 'none';
+      document.getElementById('applications').style.display = 'none';
+    }
+
+    function showJobs() {
+      document.getElementById('users').style.display = 'none';
+      document.getElementById('jobs').style.display = 'block';
+      document.getElementById('applications').style.display = 'none';
+    }
+
+    function showApplications() {
+      document.getElementById('users').style.display = 'none';
+      document.getElementById('jobs').style.display = 'none';
+      document.getElementById('applications').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
