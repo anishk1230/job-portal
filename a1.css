@@ -1,0 +1,102 @@
+/* Styles for the job portal */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:url(a3.jpg);
+    background-size:contain;
+}
+
+header {
+    background-color:#e7e3da;
+    color:chocolate;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    color:rgba(210, 105, 30, 0.838);
+}
+
+nav ul li a {
+    color: rgba(210, 105, 30, 0.838);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(142, 70, 18);
+}
+
+section {
+    margin: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #333;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+/* Additional styles for Home and Admin pages */
+#homeInfo, #adminInfo {
+    text-align: center;
+    
+}
+
+#homeInfo h2, #adminInfo h2 {
+    font-size: 24px;
+    color:chocolate;
+}
+
+#homeInfo p, #adminInfo p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+h2{
+    color:chocolate;
+}
